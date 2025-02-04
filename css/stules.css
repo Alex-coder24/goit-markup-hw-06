@@ -1,6 +1,7 @@
 body {
   color: #434455;
   font-family: 'Roboto', sans-serif;
+  background-color: #fff;
 }
 a {
   text-decoration: none;
@@ -19,10 +20,12 @@ ul {
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: #4d5ae5;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
-.header-logo-web {
-  color: #404bbf;
+.header-logo-studio {
+  color: #2e2f42;
 }
 
 .header-menu {
@@ -31,12 +34,14 @@ ul {
   font-weight: 500;
   font-size: 16px;
   color: #2e2f42;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .header-link:hover {
-  color: #4d5ae5;
+  color: #404bbf;
 }
 .header-link:active {
-  color: #4d5ae5;
+  color: #404bbf;
   text-decoration: underline;
 }
 .header-contacts {
@@ -48,9 +53,15 @@ ul {
 .header-contacts-link {
   font-weight: 400;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.2);
+  color: #434455;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .header-contacts-link:hover {
+  color: #404bbf;
+}
+.header-contacts-link:active {
   color: #404bbf;
 }
 
