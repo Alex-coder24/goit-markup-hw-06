@@ -6,11 +6,33 @@ body {
 a {
   text-decoration: none;
 }
-ul {
+ul,
+ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
 }
 
-/* ----------------------Top Line--------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+}
+
+/*#region header*/
+
+.header-container {
+}
 .header {
 }
 .header-nav {
@@ -67,9 +89,12 @@ ul {
 .header-contacts-link:active {
   color: #404bbf;
 }
+/*#endregion header*/
 
-/* ----------------------Main--------------------- */
+/*#region Main*/
 .main {
+}
+.main-container {
 }
 .main-section {
   background-color: #2e2f42;
@@ -95,8 +120,11 @@ ul {
 .main-btn:focus {
   background: #404bbf;
 }
+/*#endregion Main*/
 
-/* ----------------------Section1--------------------- */
+/*#region Section1*/
+.feature-container {
+}
 .feature {
 }
 .feature-subtitle {
@@ -105,7 +133,7 @@ ul {
 }
 .feature-item {
 }
-.feature-subtitle-f {
+.feature-item-subtitle {
   font-weight: 500;
   font-size: 20px;
   color: #2e2f42;
@@ -119,8 +147,11 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/*#endregion Section1*/
 
-/* ----------------------Section2--------------------- */
+/*#region Section2*/
+.team-container {
+}
 .team {
   background-color: #f4f4fd;
 }
@@ -140,7 +171,7 @@ ul {
 }
 .team-img {
 }
-.team-subtitle-f {
+.team-item-subtitle {
   font-weight: 500;
   font-size: 20px;
   color: #2e2f42;
@@ -154,8 +185,11 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/*#endregion Section2*/
 
-/* ----------------------Section3--------------------- */
+/*#region Section3*/
+.portfolio-container {
+}
 .portfolio {
 }
 .portfolio-subtitle {
@@ -173,7 +207,7 @@ ul {
 }
 .portfolio-img {
 }
-.portfolio-subtitle-f {
+.portfolio-item-subtitle {
   font-weight: 500;
   font-size: 20px;
   color: #2e2f42;
@@ -187,8 +221,11 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/*#endregion Section3*/
 
-/* ----------------------Footer--------------------- */
+/*#region Footer*/
+.footer-container {
+}
 .footer {
   background-color: #2e2f42;
 }
@@ -211,3 +248,4 @@ ul {
 .footer-logo-studio {
   color: #f4f4fd;
 }
+/*#endregion Footer*/
