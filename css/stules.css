@@ -157,6 +157,7 @@ p {
   font-size: 16px;
   color: #fff;
   background: #4d5ae5;
+
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
   line-height: 1.5;
@@ -165,7 +166,6 @@ p {
   margin: 0 auto;
   border-radius: 4px;
   min-width: 169px;
-  padding: 16px 32px;
   height: 56px;
   border: none;
 }
@@ -224,22 +224,20 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
   text-align: center;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-
   background: #fff;
-
+  border-radius: 0px 0px 4px 4px;
   width: 264px;
 }
 .team-list {
   display: flex;
-
+  flex-wrap: wrap;
   gap: 24px;
 }
 .team-item {
-  background-color: #ffffff;
-  width: calc((100% - 72) / 3);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72) / 3);
 }
 
 .team-img {
