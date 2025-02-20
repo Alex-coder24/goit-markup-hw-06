@@ -86,7 +86,7 @@ p {
   align-items: center;
   gap: 40px;
 }
-.header-item:first-child {
+.header-item:first-child .header-link {
   position: relative;
   color: #404bbf;
 }
