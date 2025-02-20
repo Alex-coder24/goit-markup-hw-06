@@ -86,7 +86,7 @@ p {
   align-items: center;
   gap: 40px;
 }
-.header-item {
+.header-item:first-child {
   position: relative;
   color: #404bbf;
 }
