@@ -697,10 +697,22 @@ fieldset {
   align-items: center;
   gap: 8px;
 }
-.input-check:checked {
-  border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+
+.input-check {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
 }
+.input-check:checked {
+}
+.input-check:checked + .check-lab .custom-checbox {
+  background-color: #404bbf;
+}
+.input-check:checked + .check-lab .custom-checbox .checbox-svg {
+  opacity: 1;
+}
+
 .check-lab {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -709,7 +721,24 @@ fieldset {
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
 }
+.custom-checbox {
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checbox-svg {
+  opacity: 0;
+}
+
 .form-link {
   /* line-height: 16px; */
   line-height: 1.33;
