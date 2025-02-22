@@ -496,29 +496,34 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
-          <label for="email" class="footer-label">Subscribe</label>
-          <input
-            class="footer-input-email"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="E-mail"
-            required
-          />
-          <button class="footer-input-btn" type="submit">
-            <div class="footer-flex-cont">
-              Subscribe<svg class="footer-form-svg" width="24" height="20">
-                <use href="./images/icons.svg#icon-frame"></use>
-              </svg>
-            </div>
-          </button>
-        </form>
+
+        <div class="footer-form-container">
+          <p class="footer-text-form">Subscribe</p>
+          <form class="footer-form">
+            <label>
+              <input
+                class="footer-input-email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="footer-input-btn" type="submit">
+              <div class="footer-flex-cont">
+                Subscribe<svg class="footer-form-svg" width="24" height="20">
+                  <use href="./images/icons.svg#icon-frame"></use>
+                </svg>
+              </div>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!--#endregion footer-->
     <!-- #region modal overlay -->
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
       <div class="modal">
         <form action="" class="modal-form">
           <button class="modal-form-btn" type="button">
