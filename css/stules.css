@@ -626,7 +626,7 @@ fieldset {
 }
 .modal-form-btn:hover,
 .modal-form-btn:focus {
-  background-color: #4d5ae5;
+  background-color: #404bbf;
   border: none;
 }
 .form-close {
@@ -705,6 +705,7 @@ fieldset {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  background-color: transparent;
   resize: none;
   outline: transparent;
   padding: 8px 16px;
@@ -741,10 +742,10 @@ fieldset {
 .visually-hidden:checked + .check-lab .custom-checbox {
   background-color: #404bbf;
   border: none;
+  fill: #f4f4fd;
 }
 .visually-hidden:checked + .check-lab .custom-checbox .checbox-svg {
   opacity: 1;
-  fill: #f4f4fd;
 }
 
 .check-lab {
