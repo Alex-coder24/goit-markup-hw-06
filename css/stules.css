@@ -693,7 +693,7 @@ fieldset {
   margin-bottom: 4px;
 }
 .trextar-cont {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 .textar-form {
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -709,6 +709,7 @@ fieldset {
   outline: transparent;
   padding: 8px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 16px;
 }
 
 .textar-form::placeholder {
@@ -724,7 +725,6 @@ fieldset {
   border-color: #4d5ae5;
 }
 .check-cont {
-  margin-bottom: 24px;
   gap: 8px;
 }
 
