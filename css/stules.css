@@ -583,7 +583,8 @@ fieldset {
   align-items: center;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-overlay.is-open {
   opacity: 1;
@@ -593,39 +594,51 @@ fieldset {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   border-radius: 4px;
   width: 408px;
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  translate: (-50%, -50%); */
+  min-height: 584px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form {
 }
 .modal-form-btn {
-  border-radius: 100%;
+  border-radius: 50%;
   fill: #e7e9fc;
   width: 24px;
   height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
   display: flex;
+  padding: 0;
   align-items: center;
   justify-content: center;
   margin-bottom: 24px;
-  justify-self: end;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-btn:hover,
 .modal-form-btn:focus {
   background-color: #4d5ae5;
+  border: none;
 }
 .form-close {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-btn:hover .form-close {
+.modal-form-btn:hover .form-close,
+.modal-form-btn:focus .form-close {
   fill: #fff;
 }
 
 .modal-title-form {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   /* line-height: 24px; */
@@ -639,22 +652,26 @@ fieldset {
   font-weight: 400;
   font-size: 12px;
   /* line-height: 14px; */
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: block;
   margin-bottom: 4px;
 }
+.modal-label-cont {
+  margin-bottom: 8px;
+}
 .modal-input-cont {
   position: relative;
-  margin-bottom: 8px;
 }
 .modal-input-cont .modal-input {
   padding-left: 38px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  width: 360px;
+  background-color: transparent;
+  outline: transparent;
+  width: 100%;
   height: 40px;
   resize: none;
 }
@@ -681,11 +698,16 @@ fieldset {
 }
 .textar-form {
   border: 1px solid rgba(46, 47, 66, 0.4);
+  color: rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  width: 360px;
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   resize: none;
-  padding-left: 16px;
-  padding-top: 8px;
+  outline: transparent;
+  padding: 8px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -708,19 +730,21 @@ fieldset {
   gap: 8px;
 }
 
-.input-check {
+.visually-hidden {
   opacity: 0;
   position: absolute;
   width: 0;
   height: 0;
 }
-.input-check:checked {
+.visually-hidden:checked {
 }
-.input-check:checked + .check-lab .custom-checbox {
+.visually-hidden:checked + .check-lab .custom-checbox {
   background-color: #404bbf;
+  border: none;
 }
-.input-check:checked + .check-lab .custom-checbox .checbox-svg {
+.visually-hidden:checked + .check-lab .custom-checbox .checbox-svg {
   opacity: 1;
+  fill: #f4f4fd;
 }
 
 .check-lab {
@@ -728,7 +752,7 @@ fieldset {
   font-weight: 400;
   font-size: 12px;
   /* line-height: 14px; */
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
@@ -741,9 +765,13 @@ fieldset {
   border: 1px solid rgba(46, 47, 66, 0.4);
   width: 16px;
   height: 16px;
-  display: flex;
+  display: inline-flex;
+  fill: transparent;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checbox-svg {
   opacity: 0;
@@ -769,6 +797,7 @@ fieldset {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   min-width: 169px;
+  height: 56px;
   display: block;
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
