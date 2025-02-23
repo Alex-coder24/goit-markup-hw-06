@@ -659,10 +659,10 @@ fieldset {
   margin-bottom: 4px;
 }
 .modal-label-cont {
-  margin-bottom: 8px;
 }
 .modal-input-cont {
   position: relative;
+  margin-bottom: 8px;
 }
 .modal-input-cont .modal-input {
   padding-left: 38px;
