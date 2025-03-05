@@ -23,7 +23,6 @@
 
   <body>
     <!--#region header-->
-
     <header class="header">
       <div class="container container-nav-adr">
         <nav class="header-nav">
@@ -56,25 +55,95 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- #region mobile-menu -->
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="menu-btn-close" type="button">
+            <svg class="menu-icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <nav class="menu-nav">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="./index.html" class="menu-link current">Studio</a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-link">Portfolio</a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="menu-address">
+            <ul class="menu-address-list">
+              <li class="menu-address-item">
+                <a class="menu-address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="menu-address-item">
+                <a class="menu-address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="menu-icon-list">
+            <li class="menu-icon-item">
+              <a href="" class="menu-icon-link">
+                <svg class="menu-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon-item">
+              <a href="" class="menu-icon-link">
+                <svg class="menu-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon-item">
+              <a href="" class="menu-icon-link">
+                <svg class="menu-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon-item">
+              <a href="" class="menu-icon-link">
+                <svg class="menu-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- #endregion mobile-menu -->
       </div>
     </header>
-
     <!--#endregion header-->
 
     <main class="main">
       <!--#region  hero image-->
-
       <section class="main-section">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="main-btn" type="button">Order Service</button>
         </div>
       </section>
-
       <!--#endregion  hero image-->
 
       <!--#region section 1-->
-
       <section class="feature section">
         <div class="container">
           <h2 class="visually-hidden">Our Advantages</h2>
@@ -130,11 +199,9 @@
           </ul>
         </div>
       </section>
-
       <!--#endregion section 1-->
 
       <!--#region section 2-->
-
       <section class="team section">
         <div class="container">
           <h2 class="team-subbtitle">Our Team</h2>
@@ -314,11 +381,9 @@
           </ul>
         </div>
       </section>
-
       <!--#endregion section 2-->
 
       <!--#region section 3-->
-
       <section class="portfolio section">
         <div class="container">
           <h2 class="portfolio-subtitle">Our Portfolio</h2>
@@ -446,12 +511,10 @@
           </ul>
         </div>
       </section>
-
       <!--#endregion section 3-->
     </main>
 
     <!--#region footer-->
-
     <footer class="footer">
       <div class="container footer-flex">
         <div class="footer-cont">
@@ -520,8 +583,9 @@
       </div>
     </footer>
     <!--#endregion footer-->
+
     <!-- #region modal overlay -->
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
       <div class="modal">
         <button class="modal-form-btn" type="button">
           <svg class="form-close" width="8" height="8">
