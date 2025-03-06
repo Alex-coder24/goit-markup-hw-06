@@ -226,6 +226,7 @@ fieldset {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  z-index: 999;
 }
 .mobile-menu.is-open {
   opacity: 1;
@@ -332,7 +333,7 @@ fieldset {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/mobile-bg.jpg);
+    url(../images/image-bg/mobile-bg.jpg);
   background-repeat: no-repeat;
   padding-top: 72px;
   padding-bottom: 72px;
@@ -340,6 +341,16 @@ fieldset {
   margin: 0 auto;
   background-position: center;
   background-size: cover;
+}
+@media screen and (max-width: 767px) and (min-resolution: 2x) {
+  .main-section {
+    background-color: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/image-bg/mobile-bg@2x.jpg);
+  }
 }
 .main-title {
   font-weight: 700;
@@ -380,7 +391,10 @@ fieldset {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/tablet-bg.jpg);
+      image-set(
+        url(../images/image-bg/tablet-bg.jpg) 1x,
+        url(../images/image-bg/tablet-bg@2x.jpg) 2x
+      );
     padding-top: 112px;
     padding-bottom: 112px;
     max-width: 768px;
@@ -399,7 +413,10 @@ fieldset {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      image-set(
+        url(../images/image-bg/desktop-bg.jpg) 1x,
+        url(../images/image-bg/desktop-bg@2x.jpg) 2x
+      );
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
@@ -688,8 +705,6 @@ fieldset {
   justify-content: center;
 }
 .footer-cont {
-  display: flex;
-  flex-direction: column;
 }
 .footer-cont-svg {
 }
@@ -722,7 +737,7 @@ fieldset {
   margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
-  display: inline-block;
+  display: block;
   width: 112px;
 }
 .footer-logo-studio {
