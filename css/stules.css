@@ -478,6 +478,9 @@ fieldset {
   .feature-item {
     width: calc((100% - 24px) / 2);
   }
+  .feature-item-subtitle {
+    text-align: left;
+  }
 }
 @media screen and (min-width: 1158px) {
   .feature {
@@ -491,6 +494,7 @@ fieldset {
   .feature-item {
     width: calc((100% - 72px) / 4);
   }
+
   .feature-icons {
     display: flex;
     align-items: center;
